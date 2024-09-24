@@ -1,29 +1,55 @@
-﻿using System.ComponentModel.Design;
+﻿Console.WriteLine("Cześć Mateuszu, dobrze, że wróciłeś!");
 
-/// Dzien 3 zadanie domowe
-string name = "Ewa";
-string plec = "M"; //mezczyzna - 'M', kobieta - 'K'
-int wiek = 33;
+int[] grades = new int[1];
 
-if (name != "Ewa" || wiek != 33)
+var myAge = 31;
+int myAge2 = 33;
+
+Console.WriteLine(myAge);
+float myNumber = float.MaxValue;
+
+//zmienne tekstowe
+string name = "Mateusz";
+string surname = "Jahn";
+char myVar = 'C';
+// zmienna lgoiczna
+bool isActive = true;
+isActive = false;
+var isValid = 5 > 6;
+Console.WriteLine(isValid);
+
+if (myAge < myAge2)
 {
-    if (plec == "K" && wiek < 30)
-    {
-        Console.WriteLine("Kobieta ponizej 30 lat");
-    }
-    else
-    {
-        if (plec == "M" && wiek < 18)
-        {
-            Console.WriteLine("Niepelnoletni Mezczyzna");
-        }
-        else
-        {
-            Console.WriteLine("Nie potrafie okreslic tej osoby");
-        }
-    }
+    Console.WriteLine("Jestem tutaj 23");
 }
 else
 {
-   Console.WriteLine("Ewa, lat 33");
+    Console.WriteLine("Jestem tutaj 27");
 }
+
+//operatory ==, <=, >=,!=, 
+
+
+//zadanie domowe TEMAT_ZMIENNE:
+
+string imie;
+string plec;
+int wiek;
+
+//1
+if (wiek < 30 && plec == "k");
+{
+    Console.WriteLine("Kobieta poniżej 30 lat");
+}
+//2
+if (imie == "Ewa" && wiek == 30) ;
+{
+    Console.WriteLine("Ewa, 30 lat");
+}
+//3
+if (plec == "m" && wiek < 18) ;
+{
+    Console.WriteLine("Niepełnoletni mężczyzna");
+}
+//4
+if (imie != Ewa || wiek > 30 || wiek > 18 && plec != "m") ;
