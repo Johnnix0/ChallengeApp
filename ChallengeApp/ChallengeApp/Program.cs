@@ -1,6 +1,6 @@
-﻿Console.WriteLine("Cześć Mateuszu, dobrze, że wróciłeś!");
+﻿using System;
 
-int[] grades = new int[1];
+Console.WriteLine("Cześć Mateuszu, dobrze, że wróciłeś!");
 
 var myAge = 31;
 int myAge2 = 33;
@@ -53,3 +53,26 @@ if (plec == "m" && wiek < 18) ;
 }
 //4
 if (imie != Ewa || wiek > 30 || wiek > 18 && plec != "m") ;
+
+//tablice
+int[] grades = new int[5];
+string[] daysOfWeek = new string[7];
+daysOfWeek[0] = "poniedziałek";
+daysOfWeek[1] = "wtorek";
+daysOfWeek[2] = "środa";
+daysOfWeek[3] = "czwartek";
+Console.WriteLine(daysOfWeek[2]);
+
+//pętla
+for (int i = 0; i < daysOfWeek.Length; i = i + 1)
+{
+    Console.WriteLine(daysOfWeek[i]);
+}
+
+//listy
+List <string> Pool = new List <string> ();
+
+// for each
+foreach (var day in daysOfWeek) ;
+
+
